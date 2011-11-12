@@ -2,6 +2,6 @@
 <%= link_to "Add a t0d0", new_todo_path, :class => "add" %>
 <% @todos.each do |todo| %>
   <ul class="metal">
-    <li><%= todo.title %></li>
+    <li><%= link_to todo.title, todo_url(todo) %></li>
   </ul>
 <% end %>
