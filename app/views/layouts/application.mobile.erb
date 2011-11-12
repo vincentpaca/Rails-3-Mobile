@@ -13,7 +13,7 @@
     <div class="toolbar">
       <h1>T0d0odles</h1>
       <%= link_to "Back", nil, :class => "back" unless current_page? root_path %>
-      <%= link_to "+", nil, :class => "add" %>
+      <%= link_to "+", new_todo_path, :class => "add" %>
     </div>
     
     <%= yield %>
