@@ -1,1 +1,7 @@
-This is web view
+<h1>T0d0odles</h1>
+<%= link_to "Add a t0d0", new_todo_path, :class => "add" %>
+<% @todos.each do |todo| %>
+  <ul class="metal">
+    <li><%= todo.title %></li>
+  </ul>
+<% end %>
