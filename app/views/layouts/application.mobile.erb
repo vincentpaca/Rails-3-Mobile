@@ -8,12 +8,12 @@
 </head>
 <body>
 
-  <div class="current">
+  <div class="home">
 
     <div class="toolbar">
-      <h1>T0d0odles</h1>
-      <%= link_to "Back", nil, :class => "back" unless current_page? root_path %>
-      <%= link_to "+", new_todo_path, :class => "add" %>
+      <h1>t0d0odles</h1>
+      <%= link_to "Back", root_path, :class => "back", :rel => "external" unless current_page? root_path %>
+      <%= link_to "+", "/todos/new", :class => "add slideup", :rel => "external" if current_page? root_path %>
     </div>
     
     <%= yield %>
