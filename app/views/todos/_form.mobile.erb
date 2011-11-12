@@ -14,6 +14,6 @@
     <li><%= f.text_field :title, :placeholder => "Title" %></li>
     <li><%= f.text_area :content, :placeholder => "Write your t0d0 here..." %></li>
   </ul>
-  <%= link_to "Submit", nil, :class => "submit whiteButton" %>
+  <%= link_to "Submit", nil, :class => "submit whiteButton", :method => "POST", :rel => "external" %>
   
 <% end %>

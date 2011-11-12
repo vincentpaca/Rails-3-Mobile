@@ -1,5 +1,5 @@
 <% @todos.each do |todo| %>
   <ul class="metal">
-    <li><%= link_to todo.title, todo_url(todo), :rel => "external" %></li>
+    <li class="arrow"><%= link_to todo.title, todo_url(todo), :rel => "external" %></li>
   </ul>
 <% end %>
